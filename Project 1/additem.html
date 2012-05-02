@@ -1,2 +1,110 @@
+<!DOCTYPE html>
+<!-- 1205 Shannon Plesh Visual Frameworks project 1 -->
+<!-- HTML TAG-->
+<html>
+<head>
+	<!-- Document Head-->
+	<meta charset="UTF-8"/>
+	<meta name="Drone to Phone" content="Project 1"/>
+	<meta name="keywords" content="html5, Mobile Development, Full Sail University"/>
+	<!-- Used for SEO -->
+	<meta robots="keywords" content="index, follow"/>
+	<!-- Used to allow search engine robots to index the page -->
+	<!-- Used to make content appear correctly on a mobile device -->
+	<meta name="viewport" content="user-scailable=no, width=device-width" />
+	<!-- Document Title -->
+	<title>Drone to Phone</title>
+	<!-- Import CSS Styles-->
+	<link href="css/styles.css" rel="stylesheet" type="text/css" />
+	<!-- Call the JavaScript file -->
+	
 
-<!DOCTYPE HTML, Author Shannon Plesh, Term 1205 project 1>
+  <link href="css/form.css" rel="stylesheet"/>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script type="text/javascript" src="http://yourjavascript.com/363552521/main.js"></script>
+  <h1>Drone to Phone</h1>
+<style type="text/css">
+* { font-family: Verdana; font-size: 96%; }
+label { width: 10em; float: left; }
+label.error { float: none; color: red; padding-left: .5em; vertical-align: top; }
+p { clear: both; }
+.submit { margin-left: 12em; }
+em { font-weight: bold; padding-right: 1em; vertical-align: top; }
+</style>
+  <script>
+  $(document).ready(function(){
+    $("#commentForm").validate();
+  });
+  </script>
+  
+</head>
+<body>
+<select>
+  <option value="predator">Predator Drone</option>
+  <option value="raptor">Raptor Drone</option>
+  <option value="nuclear">Nuclear Drone</option>
+</select> 
+<p>
+<input type="hidden" /> <!-- Shorthand -->
+<p/><p>
+<input type="checkbox" checked id="AIM-9" /><label for="AIM-9"> AIM-9 Sidewinder </label> <!-- Shorthand -->
+<p/><p>
+<input type="checkbox" checked id="GBU-12" /><label for="GBU-12"> GBU-12 Paveway </label> <!-- Shorthand -->
+<p/><p>
+<p/><p>
+<input type="checkbox" checked id="AGM-114" /><label for="AGM-114"> AGM-114 Hellfire </label> <!-- Shorthand -->
+<p>
+<input type="checkbox" checked id="GBU-38" /><label for="GBU-38"> GBU-38 JDAM </label> <!-- Shorthand -->
+<p/>
+
+<label for="missionName">Mission Name:</label>
+<input type="text" id="firstName" />
+
+
+
+<p>
+<input type="range" /><label for="drone1"> Mission Priority  </label> <!-- Shorthand -->
+<p/>
+<input type="date" checked id="date" /><label for="date"> Date </label> <!-- Shorthand -->
+<p>
+<input type="submit" /><label for="submit"> Start Mission </label> <!-- Shorthand -->
+<p/>
+
+
+   <form class="cmxform" id="commentForm" method="get" action="">
+ <fieldset>
+   <legend>Enter Target Information</legend>
+   <p>
+     <label for="cname">Target Name</label>
+     <em>*</em><input id="cname" name="name" size="25" class="required" minlength="2" />
+   </p>
+   <p>
+     <label for="cphone">Target number</label>
+     <em>*</em><input id="number" name="number" size="25"  class="required number" />
+   </p>
+   <p>
+     <label for="cemail">Target E-Mail</label>
+     <em>*</em><input id="cemail" name="email" size="25"  class="required email" />
+   </p>
+   <p>
+     <label for="ccomment">Your comment</label>
+     <em>*</em><textarea id="ccomment" name="comment" cols="22"  class="required"></textarea>
+   </p>
+   <p>
+     <input class="submit" type="submit" value="Submit"/>
+   </p>
+ </fieldset>
+ </form>
+<h1>Drone to Phone</h1>
+  <h2>Drone to phone uses GPS cellphone data to locate targets</h2>
+        <ul id="nav">
+            <li>
+                <a href="additem.html">Click to add target information</a>
+            </li>
+        </ul>
+</body>
+
+
+
+
+</html>
