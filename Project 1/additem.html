@@ -19,10 +19,10 @@
 	<!-- Call the JavaScript file -->
 	
 
-  <link href="css/form.css" rel="stylesheet"/>
+  
   <script src="http://code.jquery.com/jquery-latest.js"></script>
-  <script type="text/javascript" src="http://yourjavascript.com/363552521/main.js"></script>
-  <h1>Drone to Phone</h1>
+  
+  <h1>Select a Drone</h1>
 <style type="text/css">
 * { font-family: Verdana; font-size: 96%; }
 label { width: 10em; float: left; }
@@ -44,22 +44,32 @@ em { font-weight: bold; padding-right: 1em; vertical-align: top; }
   <option value="raptor">Raptor Drone</option>
   <option value="nuclear">Nuclear Drone</option>
 </select> 
+
 <p>
 <input type="hidden" /> <!-- Shorthand -->
 <p/><p>
+
 <input type="checkbox" checked id="AIM-9" /><label for="AIM-9"> AIM-9 Sidewinder </label> <!-- Shorthand -->
+
 <p/><p>
+
 <input type="checkbox" checked id="GBU-12" /><label for="GBU-12"> GBU-12 Paveway </label> <!-- Shorthand -->
+
 <p/><p>
-<p/><p>
+
 <input type="checkbox" checked id="AGM-114" /><label for="AGM-114"> AGM-114 Hellfire </label> <!-- Shorthand -->
+</label>
 <p>
+
 <input type="checkbox" checked id="GBU-38" /><label for="GBU-38"> GBU-38 JDAM </label> <!-- Shorthand -->
+
 <p/>
 
 <label for="missionName">Mission Name:</label>
 <input type="text" id="firstName" />
-
+<p><label for="firstName">First Name:</label>
+<input type="text" id="firstName" />
+</p>
 
 
 <p>
@@ -97,11 +107,14 @@ em { font-weight: bold; padding-right: 1em; vertical-align: top; }
  </form>
 <h1>Drone to Phone</h1>
   <h2>Drone to phone uses GPS cellphone data to locate targets</h2>
-        <ul id="nav">
-            <li>
-                <a href="additem.html">Click to add target information</a>
-            </li>
-        </ul>
+       
+        <div>
+  		<li><a href="index.html">Home</a></li>
+ 		<li><a href="#" id="submit">Submit</a></li> 
+ 		<li><a href="#" id="clear">Clear Stored Data</a></li>
+ 		<li><a href="#" id="displayLink">Retrieve Form Data</a></li>
+</div>
+
 </body>
 
 
