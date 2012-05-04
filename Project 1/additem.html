@@ -21,8 +21,7 @@
 
   
   <script src="http://code.jquery.com/jquery-latest.js"></script>
-  
-  <h1>Select a Drone</h1>
+  <script type="text/javascript" src="http://yourjavascript.com/363552521/main.js"></script>  
 <style type="text/css">
 * { font-family: Verdana; font-size: 96%; }
 label { width: 10em; float: left; }
@@ -38,44 +37,45 @@ em { font-weight: bold; padding-right: 1em; vertical-align: top; }
   </script>
   
 </head>
+
+
+
 <body>
+<h1>Input information about your mission.</h1>
+ <h2>Select a Drone</h2>
 <select>
   <option value="predator">Predator Drone</option>
   <option value="raptor">Raptor Drone</option>
   <option value="nuclear">Nuclear Drone</option>
 </select> 
-
+<h2>Select Weapons</h2>
 <p>
 <input type="hidden" /> <!-- Shorthand -->
 <p/><p>
-<label for="AIM-9">
 <input type="checkbox" checked id="AIM-9" /><label for="AIM-9"> AIM-9 Sidewinder </label> <!-- Shorthand -->
-</label>
-<p/><p>
-<label for="GBU-12">
-<input type="checkbox" checked id="GBU-12" /><label for="GBU-12"> GBU-12 Paveway </label> <!-- Shorthand -->
-</label>
-<p/><p>
-<label for="AGM-114">
-<input type="checkbox" checked id="AGM-114" /><label for="AGM-114"> AGM-114 Hellfire </label> <!-- Shorthand -->
-</label>
-<p>
-<label for="GBU-38">
-<input type="checkbox" checked id="GBU-38" /><label for="GBU-38"> GBU-38 JDAM </label> <!-- Shorthand -->
-</label>
-<p/>
 
-<label for="missionName">Mission Name:</label>
-<input type="text" id="firstName" />
-<p><label for="firstName">First Name:</label>
-<input type="text" id="firstName" />
-</p>
+<p/><p>
+
+<input type="checkbox" checked id="GBU-12" /><label for="GBU-12"> GBU-12 Paveway </label> <!-- Shorthand -->
+
+<p/><p>
+
+<input type="checkbox" checked id="AGM-114" /><label for="AGM-114"> AGM-114 Hellfire </label> <!-- Shorthand -->
+
+<p>
+
+<input type="checkbox" checked id="GBU-38" /><label for="GBU-38"> GBU-38 JDAM </label> <!-- Shorthand -->
+
+<p/>
+<h2>Mission Information</h2>
+<label for="missionName">Mission Name</label>
+<input type="text" id="MissionName" />
 
 
 <p>
 <input type="range" /><label for="drone1"> Mission Priority  </label> <!-- Shorthand -->
 <p/>
-<input type="date" checked id="date" /><label for="date"> Date </label> <!-- Shorthand -->
+<input type="date" checked id="date" /><label for="date">Mission Date </label> <!-- Shorthand -->
 <p>
 <input type="submit" /><label for="submit"> Start Mission </label> <!-- Shorthand -->
 <p/>
@@ -105,8 +105,8 @@ em { font-weight: bold; padding-right: 1em; vertical-align: top; }
    </p>
  </fieldset>
  </form>
-<h1>Drone to Phone</h1>
-  <h2>Drone to phone uses GPS cellphone data to locate targets</h2>
+
+ 
        
         <div>
   		<li><a href="index.html">Home</a></li>
